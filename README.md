@@ -45,17 +45,13 @@ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/Arrow_SensorFusion_turtlebot3_ws/s
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 
 
-#Verify the ros2 topic list
+#Verify the ros2 topic list by running the command and check that within the topic list, there should be an /odom and /imu topic which indicate that both the sensors are active
 ros2 topic list
-```
-To confirm, run the above command and check that within the topic list, there should be an /odom and /imu topic which indicate that both the sensors are active
 
-```
-#Confirm if they are publishing
+#Confirm if they are publishing (i.e publisher count should be 1)
 ros2 topic info /odom
 ros2 topic info /imu
 ```
-On running the above commands, if the publisher count is 1, It basically confirms that both the topics of odometry and IMU are publishing
 
 
 ## Starting up the robot_localization (ekf_filter node)
