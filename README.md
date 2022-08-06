@@ -43,10 +43,9 @@ source ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
 export TURTLEBOT3_MODEL=burger
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/Arrow_SensorFusion_turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
-```
-Verify the ros2 topic list
 
-```
+
+#Verify the ros2 topic list
 ros2 topic list
 ```
 
