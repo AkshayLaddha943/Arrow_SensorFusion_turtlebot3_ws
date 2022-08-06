@@ -19,8 +19,16 @@ The simulation requires the following libraries and packages to be installed
 - [Python 3.6.x - Python 3.8.x](https://www.python.org/)
 
 
-## Simulating the turtlebot3
+## Installing and Cloning the repository
 
-* Download the Cornell grasp dataset:  [Cornell grasp dataset](https://www.kaggle.com/datasets/oneoneliu/cornell-grasp)
+```
+git clone https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3
+cd turtlebot3_robot_localization_ws
+```
 
-* Pre-trained model for the evaluation can be downloaded from here: [Resnet](https://www.dropbox.com/s/ldapcpanzqdu7tc/models.zip?dl=0)
+## Installing required rosdep packages and dependencies
+
+```
+rosdep install --from-paths src --ignore-src -r -y
+colcon build --symlink-install
+```
