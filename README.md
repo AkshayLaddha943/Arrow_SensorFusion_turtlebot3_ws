@@ -1,5 +1,7 @@
 # Arrow_SensorFusion_turtlebot3
 
+<img src="https://github.com/AkshayLaddha943/MATLAB_Tutorial_with_Quadrotor_Modeling/blob/main/matlab.png" align="right" width="250" alt="header pic"/>
+
 This repository encapsulates my ROS workspace containing the necessary packages and program nodes to simulate a simple turtlebot3 and further performing SLAM on turtlebot3 whilst adding noise to wheel odometry sensor motion model and IMU sensor, results folder containing images and videos of simulation of turtlebot3 for different situations and a documentation as part of my Internship with Arrow Electronics (eInfochips).
 
 ## Pre-requirements
