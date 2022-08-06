@@ -23,7 +23,7 @@ The simulation requires the following libraries and packages to be installed
 
 ```
 git clone https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3
-cd turtlebot3_robot_localization_ws
+cd Arrow_SensorFusion_turtlebot3_ws
 ```
 
 ## Installing required rosdep packages and dependencies
@@ -33,4 +33,27 @@ rosdep install --from-paths src --ignore-src -r -y
 colcon build --symlink-install <package_name>
 #To build a specific package only
 colcon build --symlink-install --packages-select <name-of-pkg>
+```
+
+
+## Sourcing the workspace and starting up the turtlebot3 environment
+
+```
+source ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
+export TURTLEBOT3_MODEL=burger
+export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/Arrow_SensorFusion_turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+```
+Verify the ros2 topic list
+
+```
+ros2 topic list
+```
+
+
+## Starting up the robot_localization (ekf_filter node)
+
+```
+source ~/turtlebot3_robot_localization_ws/install/setup.bash
+ros2 launch robot_localization ekf.launch.py
 ```
