@@ -19,14 +19,14 @@ The simulation requires the following libraries and packages to be installed
 - [Python 3.6.x - Python 3.8.x](https://www.python.org/)
 
 
-Installing and Cloning the repository
+### Installing and Cloning the repository
 
 ```
 git clone https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3
 cd turtlebot3_robot_localization_ws
 ```
 
-Installing required rosdep packages and dependencies
+### Installing required rosdep packages and dependencies
 
 ```
 rosdep install --from-paths src --ignore-src -r -y
