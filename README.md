@@ -1,4 +1,4 @@
-<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3/blob/main/Arrow.png" align="right" width="200" alt="header pic"/>
+<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3/blob/main/Arrow.png" align="right" height="200" width="200" alt="header pic"/>
 
 # Arrow_SensorFusion_turtlebot3
 
