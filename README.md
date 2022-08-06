@@ -19,7 +19,7 @@ The simulation requires the following libraries and packages to be installed
 - [Python 3.6.x - Python 3.8.x](https://www.python.org/)
 
 
-## Installing and Cloning the repository
+## Cloning the repository
 
 ```
 git clone https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3
@@ -36,7 +36,7 @@ colcon build --symlink-install --packages-select <name-of-pkg>
 ```
 
 
-## Sourcing the workspace and starting up the turtlebot3 environment
+## Source the workspace and start up the turtlebot3 environment
 
 ```
 source ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
@@ -48,6 +48,14 @@ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 #Verify the ros2 topic list
 ros2 topic list
 ```
+To confirm, run the above command and check that within the topic list, there should be an /odom and /imu topic which indicate that both the sensors are active
+
+```
+#Confirm if they are publishing
+ros2 topic info /odom
+ros2 topic info /imu
+```
+On running the above commands, if the publisher count is 1, It basically confirms that both the topics of odometry and IMU are publishing
 
 
 ## Starting up the robot_localization (ekf_filter node)
