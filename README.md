@@ -30,5 +30,7 @@ cd turtlebot3_robot_localization_ws
 
 ```
 rosdep install --from-paths src --ignore-src -r -y
-colcon build --symlink-install
+colcon build --symlink-install <package_name>
+#To build a specific package only
+colcon build --symlink-install --packages-select <name-of-pkg>
 ```
