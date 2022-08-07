@@ -15,7 +15,7 @@ The simulation requires the following libraries and packages to be installed
 
 # Multi-D Kalman Filter
 
-<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/multi-d%20kalman%20filter/multid_kalman_normal.PNG" width="640" alt="EKF pic">
+<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/multi-d%20kalman%20filter/multid_kalman_normal.PNG" width="600">
 
 Documentation: [Notebook](https://github.com/AtsushiSakai/PythonRobotics/blob/master/Localization/extended_kalman_filter/extended_kalman_filter_localization.ipynb)
 ```
