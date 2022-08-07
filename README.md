@@ -91,3 +91,16 @@ ros2 run turtlebot3_teleop teleop_keyboard
 source  ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
 rviz2 -d ~/Arrow_SensorFusion_turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/rviz/tb3_gazebo_robot_localization.rviz
 ```
+
+
+## Adding noise to odometry motion model equation
+
+```
+source  ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
+ros2 run pypubsub noiseodom
+
+#run the rostopic list to check if the /noisy_odom topic is being published
+ros2 topic list
+
+#Further, visualize the rqt graph and plot the noisy_odom topic
+```
