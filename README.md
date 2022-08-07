@@ -76,17 +76,18 @@ Once the graph starts up, in the drop-down menu, select the topics you want to p
 "odom/pose/pose/position/x"
 
 
-## Starting up the robot_localization (ekf_filter node)
+## Moving the turtlebot3 around in the gazebo world
 
 ```
-source ~/turtlebot3_robot_localization_ws/install/setup.bash
-ros2 launch robot_localization ekf.launch.py
+source ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
+export TURTLEBOT3_MODEL=burger
+ros2 run turtlebot3_teleop teleop_keyboard
 ```
 
 
-## Starting up the robot_localization (ekf_filter node)
+## Visualizing the output in Rviz
 
 ```
-source ~/turtlebot3_robot_localization_ws/install/setup.bash
-ros2 launch robot_localization ekf.launch.py
+source  ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
+rviz2 -d ~/Arrow_SensorFusion_turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/rviz/tb3_gazebo_robot_localization.rviz
 ```
