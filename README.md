@@ -45,12 +45,42 @@ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/Arrow_SensorFusion_turtlebot3_ws/s
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 
 
-#Verify the ros2 topic list by running the command and check that within the topic list, there should be an /odom and /imu topic which indicate that both the sensors are active
+#Verify the ros2 topic list by running the command and there should be /odom and /imu topic which indicate that both the sensors are active
 ros2 topic list
 
 #Confirm if they are publishing (i.e publisher count should be 1)
 ros2 topic info /odom
 ros2 topic info /imu
+```
+
+
+## Starting up the robot_localization (ekf_filter node)
+
+```
+source ~/turtlebot3_robot_localization_ws/install/setup.bash
+ros2 launch robot_localization ekf.launch.py
+
+#Verify the ros2 topic list again and there should be an /odometry/filtered topic
+ros2 topic list
+```
+
+
+## Plotting a real-time graph of the odometry and filtered odometry output
+
+```
+rqt plot -e
+```
+The '-e' command removes any past data being plotted on the graph.
+Once the graph starts up, in the drop-down menu, select the topics you want to plot. For instance, to plot the x-position values of the sensors, type
+
+"odom/pose/pose/position/x"
+
+
+## Starting up the robot_localization (ekf_filter node)
+
+```
+source ~/turtlebot3_robot_localization_ws/install/setup.bash
+ros2 launch robot_localization ekf.launch.py
 ```
 
 
