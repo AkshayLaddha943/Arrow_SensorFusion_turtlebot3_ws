@@ -44,6 +44,8 @@ export TURTLEBOT3_MODEL=burger
 export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/Arrow_SensorFusion_turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 
+<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3/blob/main/results/turtlebot3/turtlebot3_gazebo.png" width="640" alt="EKF pic">
+
 
 #Verify the ros2 topic list by running the command and there should be /odom and /imu topic which indicate that both the sensors are active
 ros2 topic list
