@@ -8,22 +8,16 @@ This repository encapsulates the ROS workspace containing the necessary packages
 
 The simulation requires the following libraries and packages to be installed
 
-- [ROS2 (Foxy)](https://docs.ros.org/en/foxy/Installation.html)
-
-- [turtlebot3](https://github.com/ROBOTIS-GIT/turtlebot3)
-
-- [robot_localization](http://docs.ros.org/en/noetic/api/robot_localization/html/index.html)
-
-- [navigation2](https://navigation.ros.org/)
+- [MATLAB R2022a](https://www.mathworks.com/help/control/index.html?s_tid=CRUX_lftnav)
 
 - [Python 3.6.x - Python 3.8.x](https://www.python.org/)
 
 
-## Cloning the repository
+# Multi-D Kalman Filter
 
-```
-git clone https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3
-cd Arrow_SensorFusion_turtlebot3_ws
+<img src="https://github.com/AtsushiSakai/PythonRoboticsGifs/raw/master/Localization/extended_kalman_filter/animation.gif" width="640" alt="EKF pic">
+
+Documentation: [Notebook](https://github.com/AtsushiSakai/PythonRobotics/blob/master/Localization/extended_kalman_filter/extended_kalman_filter_localization.ipynb)
 ```
 
 ## Installing required rosdep packages and dependencies
