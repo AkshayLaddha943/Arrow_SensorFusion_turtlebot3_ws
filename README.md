@@ -103,4 +103,34 @@ ros2 run pypubsub noiseodom
 ros2 topic list
 
 #Further, visualize the rqt graph and plot the noisy_odom topic
+rqt_plot /noisy_odom/pose/pose/position
 ```
+
+
+## Performing SLAM using turtlebot3 with noisy odometry and noisy IMU values
+
+```
+#Before starting SLAM, confirm the turtlebot3_cartographer folder within the install folder of the workspace
+source  ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
+ros2 launch turtlebot3_cartographer cartographer.launch.py
+
+#Run the teleoperation node to move the robot around, until the entire world is mapped
+ros2 run turtlebot3_teleop teleop_keyboard
+
+#Once you are fine with the map, save it
+ros2 run nav2_map_server map_saver -f ~/map
+```
+
+
+## Autonomous Navigation of Turtlebot3 based on EKF output
+
+```
+#Before starting the autonomous navigation, confirm if navigation package is correctly installed using this command
+sudo apt install ros-foxy-navigation2
+
+#whilst the turtlebot3 is running, start the navigation stack using this command
+ros2 launch nav2_bringup tb3_simulation_launch.py
+```
+Configure the input of the navigation stack (which is currently set to ekf_filtered odometry output) to noisy_odom in the launch file of the navigation stack
+The rviz2 screen shows up, go to it, set the initial pose of the robot by clicking the “2D Pose Estimate” on top of the rviz2 screen. Then click on the map in the estimated position where the robot is in the Gazebo environment. Further, set a goal for the robot to move to by clicking “Navigation2 Goal” button and choose a destination. The turtlebot3 will move to the goal destination.
+
