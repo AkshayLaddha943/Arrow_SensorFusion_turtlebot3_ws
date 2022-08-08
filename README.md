@@ -17,7 +17,7 @@ The simulation requires the following libraries and packages to be installed
 
 The following graphs indicate the implementation of Multi-D Kalman Filter for two different cases of minimal noise and an highly noisy motion model equation 
 
-<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/multi-d%20kalman%20filter/mult-d-kalman_1.PNG" width="400"> 
+<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/multi-d%20kalman%20filter/mult-d-kalman_1.PNG" width="400" span class="image-caption" Kalman Filter with minimal noise> 
 <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/multi-d%20kalman%20filter/multi-d_kalman_2.PNG" width="425">
 
 Source code: [Notebook](https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/Kalman_Filter_python/Multi-D%20Kalman.ipynb)
@@ -39,7 +39,7 @@ Source code: [Notebook](https://github.com/AkshayLaddha943/Arrow_SensorFusion_tu
 
 An implementation of EKF indicate the implementation of Multi-D Kalman Filter for two different cases of no noise and noise scenario
 
-<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/kalman%20filter%20matlab_results/kalman_matlab.PNG" width="235" hspace="10"> <span class="image-caption">Kalman Filter with minimal noise</span>
+<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/kalman%20filter%20matlab_results/kalman_matlab.PNG" width="235" hspace="10">
 <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/kalman%20filter%20matlab_results/kalman_matlab_highsensornoise.PNG" width="245" hspace="10">
 <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/kalman%20filter%20matlab_results/kalman_matlab_process_noise.PNG" width="245">
 
