@@ -16,7 +16,7 @@ The simulation requires the following libraries and packages to be installed
 # Multi-D Kalman Filter
 
 <p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/multi-d%20kalman%20filter/mult-d-kalman_1.PNG" width="400"> 
-<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/multi-d%20kalman%20filter/multi-d_kalman_2.PNG" width="450">
+<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/multi-d%20kalman%20filter/multi-d_kalman_2.PNG" width="425">
 
 Source code: [Notebook](https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/Kalman_Filter_python/Multi-D%20Kalman.ipynb)
 ```
