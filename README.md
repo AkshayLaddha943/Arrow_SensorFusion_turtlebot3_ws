@@ -2,7 +2,7 @@
 
 # Arrow_SensorFusion_turtlebot3
 
-This repository encapsulates the ROS workspace containing the necessary packages and program nodes to simulate a simple turtlebot3 and further performing SLAM on turtlebot3 whilst adding noise to wheel odometry sensor motion model and IMU sensor. It also includes the results folder containing images and videos of simulation of turtlebot3 for different situations and a documentation as part of my Internship with Arrow Electronics (eInfochips).
+This branch of the repository presents the simulations associated with Mulit-dimensional Kalman Filter and Extended Kalman Filter using Python3 and MATLAB. Moreover, This branch also includes a results folder containing results for different algorithms and a source code of these algorithms in Jupyter and MATLAB.
 
 ## Pre-requisites
 
@@ -15,6 +15,8 @@ The simulation requires the following libraries and packages to be installed
 
 # Multi-D Kalman Filter
 
+The following graphs indicate the implementation of Multi-D Kalman Filter for two different cases of minimal noise and an highly noisy motion model equation 
+
 <p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/multi-d%20kalman%20filter/mult-d-kalman_1.PNG" width="400"> 
 <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/multi-d%20kalman%20filter/multi-d_kalman_2.PNG" width="425">
 
@@ -22,6 +24,9 @@ Source code: [Notebook](https://github.com/AkshayLaddha943/Arrow_SensorFusion_tu
 
 
 # Extended Kalman Filter-Python3
+
+
+An implementation of EKF below indicates a comparison between state space model values which seem to be underpredicted and EKF values which blends the estimated state value with the sensor data to create a better state estimate of true observations
 
 <p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/EKF_results/ekf_1.PNG" width="235" hspace="10"> 
 <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/EKF_results/ekf_2.PNG" width="245" hspace="10">
@@ -32,7 +37,9 @@ Source code: [Notebook](https://github.com/AkshayLaddha943/Arrow_SensorFusion_tu
 
 # Extended Kalman Filter-MATLAB (R2022a)
 
-<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/kalman%20filter%20matlab_results/kalman_matlab.PNG" width="235" hspace="10"> 
+An implementation of EKF indicate the implementation of Multi-D Kalman Filter for two different cases of no noise and noise scenario
+
+<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/kalman%20filter%20matlab_results/kalman_matlab.PNG" width="235" hspace="10"> <span class="image-caption">Kalman Filter with minimal noise</span>
 <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/kalman%20filter%20matlab_results/kalman_matlab_highsensornoise.PNG" width="245" hspace="10">
 <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/kalman%20filter%20matlab_results/kalman_matlab_process_noise.PNG" width="245">
 
