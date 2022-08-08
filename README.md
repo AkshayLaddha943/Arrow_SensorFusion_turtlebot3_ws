@@ -29,94 +29,13 @@ Source code: [Notebook](https://github.com/AkshayLaddha943/Arrow_SensorFusion_tu
 
 Source code: [Notebook](https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/Kalman_Filter_python/EKF.ipynb)
 
-#Verify the ros2 topic list by running the command and there should be /odom and /imu topic which indicate that both the sensors are active
-ros2 topic list
 
-#Confirm if they are publishing (i.e publisher count should be 1)
-ros2 topic info /odom
-ros2 topic info /imu
-```
 
+# Extended Kalman Filter-MATLAB (R2022a)
+
+<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/EKF_results/ekf_1.PNG" width="235" hspace="10"> 
+<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/EKF_results/ekf_2.PNG" width="245" hspace="10">
+<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/EKF_results/ekf_3.PNG" width="245">
+
+Source code: [Notebook](https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/Kalman_Filter_python/EKF.ipynb)
 <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3/blob/main/results/turtlebot3/turtlebot3_gazebo.png" width="480" alt="turtlebot3_simulation">
-
-
-## Starting up the robot_localization (ekf_filter node)
-
-```
-source ~/turtlebot3_robot_localization_ws/install/setup.bash
-ros2 launch robot_localization ekf.launch.py
-
-#Verify the ros2 topic list again and there should be an /odometry/filtered topic
-ros2 topic list
-```
-
-
-## Plotting a real-time graph of the odometry and filtered odometry output
-
-```
-rqt plot -e
-```
-The '-e' command removes any past data being plotted on the graph.
-Once the graph starts up, in the drop-down menu, select the topics you want to plot. For instance, to plot the x-position values of the sensors, type
-
-"odom/pose/pose/position/x"
-
-
-## Moving the turtlebot3 around in the gazebo world
-
-```
-source ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
-export TURTLEBOT3_MODEL=burger
-ros2 run turtlebot3_teleop teleop_keyboard
-```
-
-
-## Visualizing the output in Rviz
-
-```
-source  ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
-rviz2 -d ~/Arrow_SensorFusion_turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/rviz/tb3_gazebo_robot_localization.rviz
-```
-
-
-## Adding noise to odometry motion model equation
-
-```
-source  ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
-ros2 run pypubsub noiseodom
-
-#run the rostopic list to check if the /noisy_odom topic is being published
-ros2 topic list
-
-#Further, visualize the rqt graph and plot the noisy_odom topic
-rqt_plot /noisy_odom/pose/pose/position
-```
-
-
-## Performing SLAM using turtlebot3 with noisy odometry and noisy IMU values
-
-```
-#Before starting SLAM, confirm the turtlebot3_cartographer folder within the install folder of the workspace
-source  ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
-ros2 launch turtlebot3_cartographer cartographer.launch.py
-
-#Run the teleoperation node to move the robot around, until the entire world is mapped
-ros2 run turtlebot3_teleop teleop_keyboard
-
-#Once you are fine with the map, save it
-ros2 run nav2_map_server map_saver -f ~/map
-```
-
-
-## Autonomous Navigation of Turtlebot3 based on EKF output
-
-```
-#Before starting the autonomous navigation, confirm if navigation package is correctly installed using this command
-sudo apt install ros-foxy-navigation2
-
-#whilst the turtlebot3 is running, start the navigation stack using this command
-ros2 launch nav2_bringup tb3_simulation_launch.py
-```
-Configure the input of the navigation stack (which is currently set to ekf_filtered odometry output) to noisy_odom in the launch file of the navigation stack
-The rviz2 screen shows up, go to it, set the initial pose of the robot by clicking the “2D Pose Estimate” on top of the rviz2 screen. Then click on the map in the estimated position where the robot is in the Gazebo environment. Further, set a goal for the robot to move to by clicking “Navigation2 Goal” button and choose a destination. The turtlebot3 will move to the goal destination.
-
