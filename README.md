@@ -23,8 +23,8 @@ Source code: [Notebook](https://github.com/AkshayLaddha943/Arrow_SensorFusion_tu
 
 # Extended Kalman Filter-Python3
 
-<p align="middle"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/EKF_results/ekf_1.PNG" width="265"> 
-<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/EKF_results/ekf_2.PNG" width="275">
+<p align="middle"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/EKF_results/ekf_1.PNG" width="265" hspace="10"> 
+<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/EKF_results/ekf_2.PNG" width="275" hspace="10">
 <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/EKF_results/ekf_3.PNG" width="270">
 
 Source code: [Notebook](https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/Kalman_Filter_python/EKF.ipynb)
