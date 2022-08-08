@@ -15,11 +15,10 @@ The simulation requires the following libraries and packages to be installed
 
 # Multi-D Kalman Filter
 
-<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/multi-d%20kalman%20filter/multid_kalman_normal.PNG" width="290"> 
-<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/multi-d%20kalman%20filter/2d_kalman_changing_x_23.PNG" width="290">
-<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/multi-d%20kalman%20filter/2d_kalman_changing_x.PNG" width="290">
+<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/multi-d%20kalman%20filter/mult-d-kalman_1.PNG" width="400"> 
+<img src=https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/multi-d%20kalman%20filter/multi-d_kalman_2.PNG" width="400">
 
-Source code: [Notebook](https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/Kalman_Filter_python/multid_kalman.ipynb)
+Source code: [Notebook](https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/Kalman_Filter_python/Multi-D%20Kalman.ipynb)
 ```
 
 ## Installing required rosdep packages and dependencies
