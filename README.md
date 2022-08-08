@@ -19,26 +19,15 @@ The simulation requires the following libraries and packages to be installed
 <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/multi-d%20kalman%20filter/multi-d_kalman_2.PNG" width="425">
 
 Source code: [Notebook](https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/Kalman_Filter_python/Multi-D%20Kalman.ipynb)
-```
-
-## Installing required rosdep packages and dependencies
-
-```
-rosdep install --from-paths src --ignore-src -r -y
-colcon build --symlink-install <package_name>
-#To build a specific package only
-colcon build --symlink-install --packages-select <name-of-pkg>
-```
 
 
-## Source the workspace and start up the turtlebot3 environment
+# Extended Kalman Filter-Python3
 
-```
-source ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
-export TURTLEBOT3_MODEL=burger
-export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/Arrow_SensorFusion_turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models/
-ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/EKF_results/ekf_1.PNG" width="200"> 
+<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/EKF_results/ekf_2.PNG" width="20">
+<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/results/EKF_results/ekf_3.PNG" width="200">
 
+Source code: [Notebook](https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/second/Kalman_Filter_python/EKF.ipynb)
 
 #Verify the ros2 topic list by running the command and there should be /odom and /imu topic which indicate that both the sensors are active
 ros2 topic list
