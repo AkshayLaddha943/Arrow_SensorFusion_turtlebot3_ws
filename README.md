@@ -53,7 +53,7 @@ ros2 topic info /odom
 ros2 topic info /imu
 ```
 
-<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/turtlebot3/turtlebot3_gazebo.png" width="500" alt="turtlebot3_simulation">
+<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/turtlebot3/turtlebot3_gazebo.png" width="250" alt="turtlebot3_simulation">
 
 
 ## Starting up the robot_localization (ekf_filter node)
