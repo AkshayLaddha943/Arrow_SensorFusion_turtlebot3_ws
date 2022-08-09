@@ -134,7 +134,7 @@ SLAM was performed for three different inputs of odometry sensor, noisy odometry
 
 
 <p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/turtlebot3/turtlebot3_gazebo.png" height="250" width="300" alt="turtlebot3_simulation">
-
+<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-04%2022-09-59.png" height="250" width="300" alt="turtlebot3_noisy" hspace="10">
 
 ## Autonomous Navigation of Turtlebot3 based on EKF output
 
