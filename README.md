@@ -99,6 +99,10 @@ After running the rviz command, the rviz window opens up, in the bottom right, c
 
 <p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-03%2001-41-46.png" height="300" width="400" alt="turtlebot3_rviz">
 
+
+<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-03%2001-48-31.png" height="300" width="400" alt="turtlebot3_rviz">
+
+
 ## Adding noise to odometry motion model equation
 
 ```
