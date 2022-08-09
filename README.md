@@ -34,8 +34,6 @@ The simulation requires the following libraries and packages to be installed
 * [Autonomous Navigation of Turtlebot3 based on EKF output](https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws#autonomous-navigation-of-turtlebot3-based-on-ekf-output)
 
 <br/>
-<br/>
-<br/>
 
 
 ## Cloning the repository
