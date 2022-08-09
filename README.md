@@ -17,9 +17,7 @@ The simulation requires the following libraries and packages to be installed
 - [navigation2](https://navigation.ros.org/)
 
 - [Python 3.6.x - Python 3.8.x](https://www.python.org/)
-
 <br/>
-
 ## Table of Contents
 
 * [Cloning the repository](https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws#cloning-the-repository)
@@ -74,9 +72,7 @@ ros2 topic info /imu
 On performing the above commands, the turtlebot3 gazebo window should start in this way -
 
 <p align="center"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/turtlebot3/turtlebot3_gazebo.png" height="500" width=500" alt="turtlebot3_simulation">
-
-
-
+<br/>
 
 ## Starting up the robot_localization (ekf_filter node)
 
@@ -89,7 +85,7 @@ ros2 topic list
 ```
 After running the EKF launch file of robot_localization package, you should receive a similiar output -
 
-<p align="center"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/EKF_output.png" height="120" width="950" alt="turtlebot3_rviz">
+<p align="center"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/EKF_output.png" height="100" width="920" alt="turtlebot3_rviz">
 
 P.S: Warnings or error may arise if the ekf launch file is initiated before the turtlebot3 rendering takes place
 
