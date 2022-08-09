@@ -139,6 +139,38 @@ ros2 topic list
 rqt_plot /noisy_odom/pose/pose/position
 ```
 
+On running the python node, a /noisy_odom gets created which can be visualized in rviz2 as below -
+
+The red arrow indicates the clear odometry measurement and the green arrow denotes the distorted and noisy odometry output
+
+https://user-images.githubusercontent.com/62604049/183763104-badd4344-b756-4ff7-afeb-7bfd37a6e7bf.mp4
+
+Based on the visualization, it is evident that the green arrow shows instability and thus is affected by noise
+
+
+
+
+## Adding bias to the IMU sensor of the turtlebot3 -
+
+1. Navigate to the models folder within the turtlebot3_gazebo package and select the .sdf file for turtlebot3 (burger)
+2. Within the .sdf file, go the <imu_link> tag of the turtlebot3
+3. Inside the tag, include <bias> term within the <linear_acceleration> section
+4. Tune the bias values from 0.005 up till 1.5 or 2
+
+
+After performing the following, run the simulation again and plot a graph for these outputs
+
+The command presents you with a real-time comparison between actual noisy acceleration values from IMU and filtered acceleration values after being passed through EKF -
+
+
+``
+rqt_plot /imu/pose/pose/acceleration/ /accel/filtered/pose/pose/position
+```
+
+
+
+
+
 
 ## Performing SLAM using turtlebot3 with noisy odometry and noisy IMU values
 
