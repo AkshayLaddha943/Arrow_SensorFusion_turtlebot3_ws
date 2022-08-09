@@ -66,7 +66,9 @@ ros2 launch robot_localization ekf.launch.py
 #Verify the ros2 topic list again and there should be an /odometry/filtered topic
 ros2 topic list
 ```
-
+  
+<p align="center"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/EKF_output.png" height="300" width="400" alt="turtlebot3_rviz">
+  
 
 ## Plotting a real-time graph of the odometry and filtered odometry output
 
