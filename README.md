@@ -95,6 +95,9 @@ source  ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
 rviz2 -d ~/Arrow_SensorFusion_turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/rviz/tb3_gazebo_robot_localization.rviz
 ```
 
+After running the rviz command, the rviz window opens up, in the bottom right, click add and select the topics you want to visualize, In this case, we have visualized the /odom topic and /odometry/filtered topics -
+
+<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-03%2001-41-46.png" height="500" width="500" alt="turtlebot3_rviz">
 
 ## Adding noise to odometry motion model equation
 
