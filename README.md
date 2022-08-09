@@ -54,7 +54,7 @@ ros2 topic info /imu
 ```
 On performing the above commands, the turtlebot3 gazebo window should start in this way -
 
-<p align="center"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/turtlebot3/turtlebot3_gazebo.png" height="500" width="500" alt="turtlebot3_simulation">
+<p align="center"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/turtlebot3/turtlebot3_gazebo.png" height="500" width=700" alt="turtlebot3_simulation">
 
 
 ## Starting up the robot_localization (ekf_filter node)
