@@ -33,12 +33,9 @@ The simulation requires the following libraries and packages to be installed
 * [Performing SLAM using turtlebot3 with noisy odometry and noisy IMU values](https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws#performing-slam-using-turtlebot3-with-noisy-odometry-and-noisy-imu-values)
 * [Autonomous Navigation of Turtlebot3 based on EKF output](https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws#autonomous-navigation-of-turtlebot3-based-on-ekf-output)
 
-
-
-
-</p>
-
-
+<br/>
+<br/>
+<br/>
 
 
 ## Cloning the repository
