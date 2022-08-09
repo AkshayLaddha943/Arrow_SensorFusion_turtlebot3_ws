@@ -133,9 +133,9 @@ ros2 run nav2_map_server map_saver -f ~/map
 SLAM was performed for three different inputs of odometry sensor, noisy odometry sensor and a filtered odometry sensor (Extended Kalman Filter) - 
 
 
-<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/turtlebot3/turtlebot3_gazebo.png" height="500" width="500" alt="turtlebot3_simulation">
-<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-04%2022-09-59.png" height="400" width="500" alt="turtlebot3_noisy">
-<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/turtlebot3/turtlebot3_gazebo.png" height="500" width="500" alt="turtlebot3_simulation">
+<p align="left"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/turtlebot3/turtlebot3_gazebo.png" height="400" width="400" alt="turtlebot3_simulation">
+<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-04%2022-09-59.png" height="400" width="400" alt="turtlebot3_noisy">
+<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/turtlebot3/turtlebot3_gazebo.png" height="400" width="400" alt="turtlebot3_simulation">
 
 
 ## Autonomous Navigation of Turtlebot3 based on EKF output
