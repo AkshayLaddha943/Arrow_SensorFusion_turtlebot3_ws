@@ -17,7 +17,9 @@ The simulation requires the following libraries and packages to be installed
 - [navigation2](https://navigation.ros.org/)
 
 - [Python 3.6.x - Python 3.8.x](https://www.python.org/)
-<br/>
+
+
+
 ## Table of Contents
 
 * [Cloning the repository](https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws#cloning-the-repository)
