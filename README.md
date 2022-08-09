@@ -18,6 +18,7 @@ The simulation requires the following libraries and packages to be installed
 
 - [Python 3.6.x - Python 3.8.x](https://www.python.org/)
 
+<br/>
 
 ## Table of Contents
 
