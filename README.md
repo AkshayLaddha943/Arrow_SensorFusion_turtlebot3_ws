@@ -57,6 +57,8 @@ On performing the above commands, the turtlebot3 gazebo window should start in t
 <p align="center"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/turtlebot3/turtlebot3_gazebo.png" height="500" width=500" alt="turtlebot3_simulation">
 
 
+
+
 ## Starting up the robot_localization (ekf_filter node)
 
 ```
@@ -72,6 +74,8 @@ After running the EKF launch file of robot_localization package, you should rece
 
 P.S: Warnings or error may arise if the ekf launch file is initiated before the turtlebot3 rendering takes place
 
+
+
 ## Plotting a real-time graph of the odometry and filtered odometry output
 
 ```
@@ -82,8 +86,11 @@ Once the graph starts up, in the drop-down menu, select the topics you want to p
 
 "odom/pose/pose/position/x"
 
+The following video provides a real-time comparison of actual sensor measurements and filtered sensor measurements whilst moving the turtlebot3 -
+
 
 https://user-images.githubusercontent.com/62604049/183757844-adfc9237-0178-4419-ae2d-9a2ce7546622.mp4
+
 
 
 
