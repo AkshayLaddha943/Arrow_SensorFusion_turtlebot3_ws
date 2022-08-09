@@ -94,6 +94,8 @@ https://user-images.githubusercontent.com/62604049/183757844-adfc9237-0178-4419-
 
 
 
+
+
 ## Moving the turtlebot3 around in the gazebo world
 
 ```
@@ -101,6 +103,13 @@ source ~/Arrow_SensorFusion_turtlebot3_ws/install/setup.bash
 export TURTLEBOT3_MODEL=burger
 ros2 run turtlebot3_teleop teleop_keyboard
 ```
+
+The output from odometry and filtered odometry visualized in Rviz while moving the turtlebot3 around in the environment using thr above command -
+
+https://user-images.githubusercontent.com/62604049/183759447-e74582de-6393-4363-8dd6-047269172687.mp4
+
+
+
 
 
 ## Visualizing the output in Rviz
