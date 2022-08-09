@@ -163,8 +163,9 @@ After performing the following, run the simulation again and plot a graph for th
 The command presents you with a real-time comparison between actual noisy acceleration values from IMU and filtered acceleration values after being passed through EKF -
 
 
-``
+```
 rqt_plot /imu/pose/pose/acceleration/ /accel/filtered/pose/pose/position
+
 ```
 
 
@@ -196,6 +197,8 @@ Further, noise and bias term were added to the odometry and IMU data, and were g
 
 <p align="center"><img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-04%2022-09-59.png" height="250" width="300" alt="turtlebot3_noisy" hspace="10">
 <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/EKF_odom_SLAM.png" height="250" width="300" alt="turtlebot3_noisy">
+
+
 
 ## Autonomous Navigation of Turtlebot3 based on EKF output
 
