@@ -231,6 +231,6 @@ The rviz2 screen shows up, go to it, set the initial pose of the robot by clicki
 
 On selecting the 2D pose estimate and placing a point to indicate where the turtlebot3 is, a similiar output should be obtained -
 
-<p align="center"><img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-05%2005-41-58.png" height="300" width="400" alt="turtlebot3_autonomous">
+<p align="center"><img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-05%2005-41-58.png" height="350" width="500" alt="turtlebot3_autonomous">
 
 
