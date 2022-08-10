@@ -87,7 +87,7 @@ ros2 topic list
 ```
 After running the EKF launch file of robot_localization package, you should receive a similiar output -
 
-<p align="center"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/EKF_output.png" height="100" width="920" alt="turtlebot3_rviz">
+<p align="center"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/EKF_output.png" height="100" width="950" alt="turtlebot3_rviz">
 
 P.S: Warnings or error may arise if the ekf launch file is initiated before the turtlebot3 rendering takes place
 
@@ -212,8 +212,8 @@ A stable and an undistorted map using simple odometry and imu sensor measurments
 
 Further, noise and bias term were added to the odometry and IMU data, and were given as an input to the EKF node - 
 
-<p align="center"><img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-04%2022-09-59.png" height="350" width="400" alt="turtlebot3_noisy" hspace="10">
-<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/EKF_odom_SLAM.png" height="350" width="400" alt="turtlebot3_noisy">
+<p align="center"><img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-04%2022-09-59.png" height="300" width="450" alt="turtlebot3_noisy" hspace="10">
+<img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/EKF_odom_SLAM.png" height="300" width="450" alt="turtlebot3_noisy">
 
 
 
