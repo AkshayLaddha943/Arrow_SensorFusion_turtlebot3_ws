@@ -229,3 +229,8 @@ ros2 launch nav2_bringup tb3_simulation_launch.py
 Configure the input of the navigation stack (which is currently set to ekf_filtered odometry output) to noisy_odom in the launch file of the navigation stack
 The rviz2 screen shows up, go to it, set the initial pose of the robot by clicking the “2D Pose Estimate” on top of the rviz2 screen. Then click on the map in the estimated position where the robot is in the Gazebo environment. Further, set a goal for the robot to move to by clicking “Navigation2 Goal” button and choose a destination. The turtlebot3 will move to the goal destination.
 
+On selecting the 2D pose estimate and placing a point to indicate where the turtlebot3 is, a similiar output should be obtained -
+
+<p align="center"><img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-05%2005-41-58.png" height="300" width="400" alt="turtlebot3_autonomous">
+
+
