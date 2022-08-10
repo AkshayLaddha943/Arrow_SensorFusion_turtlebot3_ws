@@ -87,7 +87,7 @@ ros2 topic list
 ```
 After running the EKF launch file of robot_localization package, you should receive a similiar output -
 
-<p align="center"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/EKF_output.png" height="100" width="950" alt="turtlebot3_rviz">
+<p align="center"> <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/EKF_output.png" height="70" width="950" alt="turtlebot3_rviz">
 
 P.S: Warnings or error may arise if the ekf launch file is initiated before the turtlebot3 rendering takes place
 
