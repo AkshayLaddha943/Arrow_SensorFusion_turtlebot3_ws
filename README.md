@@ -143,6 +143,8 @@ After running the rviz command, the rviz window opens up, in the bottom right, c
 <img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-03%2001-48-31.png" height="300" width="400" alt="turtlebot3_rviz">
 
 
+
+
 ## Adding noise to odometry motion model equation
 
 ```
@@ -164,6 +166,11 @@ https://user-images.githubusercontent.com/62604049/183763104-badd4344-b756-4ff7-
 
 Based on the visualization, it is evident that the green arrow shows instability and thus is affected by noise
 
+
+The below visualization shows the comparison between the actual odometry values and EKF based filtered values, when fed with noisy odometry as input. Due to some noise, the ekf_node was displaced but on tuning and increasing the process noise covariance matrix values, the purple arrow which indicates ekf_output is still close to the true observations.
+
+
+https://user-images.githubusercontent.com/62604049/184324586-db9d7278-2d9e-446f-84f1-7a95f99177fc.mp4
 
 
 
@@ -231,6 +238,11 @@ The rviz2 screen shows up, go to it, set the initial pose of the robot by clicki
 
 On selecting the 2D pose estimate and placing a point to indicate where the turtlebot3 is, a similiar output should be obtained -
 
-<p align="center"><img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-05%2005-41-58.png" height="350" width="500" alt="turtlebot3_autonomous">
+<p align="center"><img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-05%2005-41-58.png" height="350" width="550" alt="turtlebot3_autonomous">
+
+Moving the turtlebot3 from its initial location to the goal location -
+
+<p align="center"><img src="https://github.com/AkshayLaddha943/Arrow_SensorFusion_turtlebot3_ws/blob/main/results/Arrow_ROS_Results/Screenshot%20from%202022-08-05%2006-29-08.png" height="350" width="550" alt="turtlebot3_autonomous">
+
 
 
